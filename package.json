@@ -1,0 +1,24 @@
+{
+  "name": "netspace",
+  "version": "1.0.0",
+  "description": "3d shared experiment space",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dionsteel:G0ndolin1!@github.com/dionsteel/netspace.git"
+  },
+  "keywords": [
+    "webgl",
+    "voxeljs",
+    "shared"
+  ],
+  "author": "Dion Steel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dionsteel/netspace/issues"
+  },
+  "homepage": "https://github.com/dionsteel/netspace#readme"
+}
