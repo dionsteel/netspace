@@ -17,30 +17,31 @@ var server = Server(settings)
 
 // bind events
 server.on('missingChunk', function(chunk){  
+	console.log("missingChunk", chunk);
 })
 server.on('client.join', function(client){ 
 	//things
-	console.log(client);
+	console.log('client.join',client);
 })
 server.on('client.leave', function(client){ 
 	//things
-	console.log(client);
+	console.log("client.leave",client);
 })
 server.on('client.state', function(state){  
 	//things
-	console.log(state);
+	console.log("client.state", state);
 })
 server.on('chat', function(message){  
 	//things
-	console.log(message);
+	console.log("chat:", message);
 })
 server.on('set', function(pos, val, client){  
 	//things
-	console.log(pos,val, client);
+	console.log("set:", pos,val, client);
 })
 server.on('error', function(error){  
 	//things
-	console.log(error);
+	console.log("error", error);
 })
 
 // connect a client
@@ -53,5 +54,9 @@ var wss = new WebSocketServer({server: webserver})
 wss.on('connection', function(ws) {
 	// turn 'raw' websocket into a stream
 	var stream = websocket(ws);
-	server.connectCLient(stream);
+	console.log("CONNECTIOn!");
+	server.connectClient(stream);
 });
+
+webserver.listen(8080);
+console.log("listening on port 8080");
