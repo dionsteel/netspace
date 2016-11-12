@@ -1,4 +1,4 @@
-var Server = require('voxel-server')
+var Server = require('voxel-server-ns')
 var WebSocketServer = require('ws').Server
 var websocket = require('websocket-stream')
 var http = require('http')

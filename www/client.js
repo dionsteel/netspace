@@ -1,4 +1,4 @@
-var Client = require("voxel-client");
+var Client = require("voxel-client-ns");
 var wsclient = require("ws").Client;
 var websocket = require('websocket-stream');
 var highlight = require('voxel-highlight')
